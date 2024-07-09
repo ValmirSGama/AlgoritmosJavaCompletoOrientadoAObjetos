@@ -17,12 +17,14 @@ public class Contract {
 	public Contract() {
 	}
 
+	// Construtor com argumentos 
 	public Contract(Integer number, LocalDate date, Double totalValue) {
 		this.number = number;
 		this.date = date;
 		this.totalValue = totalValue;
 	}
 
+	// Getters e Setters
 	public Integer getNumber() {
 		return number;
 	}
