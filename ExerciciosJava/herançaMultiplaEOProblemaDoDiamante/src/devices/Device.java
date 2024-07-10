@@ -4,10 +4,12 @@ public abstract class Device {
 
 	public String serialNumber;
 	
+	// Construtor recebendo argumento
 	public Device(String serialNumber) {
 		this.serialNumber = serialNumber;
 	}
 	
+	// Getters e Setters
 	public String getSerialNumber() {
 		return serialNumber;
 	}
@@ -16,5 +18,6 @@ public abstract class Device {
 		this.serialNumber = serialNumber;
 	}
 	
+	// Método abstrato processDoc
 	public abstract void processDoc(String doc);
 }
