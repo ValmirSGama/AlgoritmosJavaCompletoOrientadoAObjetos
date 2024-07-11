@@ -7,7 +7,6 @@ public class Employee implements Comparable<Employee> { // Interface comparable,
 	
 	// Construtor com argumentos
 	public Employee(String name, Double salary) {
-		super();
 		this.name = name;
 		this.salary = salary;
 	}
