@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import services.BrazilInterestService;
+import services.InterestService;
 
 public class Program {
 
@@ -17,10 +18,11 @@ public class Program {
 		System.out.print("Months: ");
 		int months = sc.nextInt();
 		
-		BrazilInterestService is = new BrazilInterestService(2.0);
+		// Instanciando um ojeto do tipo Classe e passando por parametro o valor da taxa de juros 
+		InterestService is = new BrazilInterestService(2.0);
 		double payment = is.payment(amount, months);
 		
-		System.out.println("Payment after " + months + "Amount: ");
+		System.out.println("Payment after " + months + " Amount: ");
 		System.out.println(String.format("%.2f", payment));
 		
 		sc.close();
