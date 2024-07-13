@@ -3,9 +3,8 @@
 
 # Configurações do eclipse
 *.settings
-*.classpath
 *.gitignore
-*.project
+
 
 # Log file
 *.log
