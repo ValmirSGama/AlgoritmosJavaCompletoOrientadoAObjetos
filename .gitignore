@@ -4,8 +4,6 @@
 # Configurações do eclipse
 *.settings
 *.gitignore
-*.classpath
-*.project
 
 # Log file
 *.log
