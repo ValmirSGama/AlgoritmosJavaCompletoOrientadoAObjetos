@@ -32,6 +32,11 @@ public class Product {
 		this.price = price;
 	}
 	
+	// Método static
+	public static boolean staticProductPredicate(Product p) {
+		return p.getPrice() >= 100.0;
+	}
+	
 	// Método toString
 	@Override
 	public String toString() {
