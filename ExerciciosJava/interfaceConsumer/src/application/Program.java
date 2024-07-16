@@ -20,12 +20,9 @@ public class Program {
 		list.add(new Product("HD Case", 80.90));
 		
 		double factor = 1.1; // Valor de atualização de preço que pode ser lida pelo usuário
-		
-		// Variável do tipo Consumer recebendo uma função lambida
-		Consumer<Product> cons = p -> p.setPrice(p.getPrice() * factor);
 
-		// List forEach recebendo como argumento a variável do tipo consumer
-		list.forEach(cons);
+		// Expressão lambda inline no consumer
+		list.forEach(p -> p.setPrice(p.getPrice() * factor));
 		
 		// Usando um reference method para o println no consumer
 		list.forEach(System.out::println);
