@@ -37,6 +37,11 @@ public class Product {
 		p.setPrice(p.getPrice() * 1.1);
 	}
 	
+	// Método que faz a mesma função do static
+	public void nonStaticPriceUpdate() {
+		price = price * 1.1;
+	}
+		
 	// Método toString
 	@Override
 	public String toString() {

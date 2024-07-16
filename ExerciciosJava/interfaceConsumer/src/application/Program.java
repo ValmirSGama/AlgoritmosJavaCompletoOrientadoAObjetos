@@ -19,8 +19,8 @@ public class Program {
 		list.add(new Product("Tablet", 350.50));
 		list.add(new Product("HD Case", 80.90));
 		
-		// List forEach fazendo uma referência ao método static no consumer
-		list.forEach(Product::staticPriceUpdate);
+		// List forEach fazendo uma referência ao método não static no consumer
+		list.forEach(Product::nonStaticPriceUpdate);
 		
 		// Usando um reference method para o println no consumer
 		list.forEach(System.out::println);
