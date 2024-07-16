@@ -33,14 +33,9 @@ public class Product {
 	}
 	
 	// Método static
-	public static boolean staticProductPredicate(Product p) {
-		return p.getPrice() >= 100.0;
+	public static void staticPriceUpdate(Product p) {
+		p.setPrice(p.getPrice() * 1.1);
 	}
-	
-	// Método boolean não Static
-		public boolean nonStaticProductPredicate() {
-			return price >= 100.0;
-		}
 	
 	// Método toString
 	@Override
