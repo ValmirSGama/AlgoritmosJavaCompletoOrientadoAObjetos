@@ -19,8 +19,8 @@ public class Program {
 		list.add(new Product("Tablet", 350.00));
 		list.add(new Product("HD Case", 80.00));
 		
-		// Lista recebendo uma referência para método
-		list.removeIf(Product::staticProductPredicate);
+		// Lista recebendo uma referência para método não Static 
+		list.removeIf(Product::nonStaticProductPredicate);
 		
 		for(Product p : list) {
 			System.out.println(p);

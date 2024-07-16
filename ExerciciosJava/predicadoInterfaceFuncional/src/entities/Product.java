@@ -37,6 +37,11 @@ public class Product {
 		return p.getPrice() >= 100.0;
 	}
 	
+	// Método boolean não Static
+		public boolean nonStaticProductPredicate() {
+			return price >= 100.0;
+		}
+	
 	// Método toString
 	@Override
 	public String toString() {
