@@ -3,7 +3,6 @@ package application;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.function.Predicate;
 
 import entities.Product;
 
@@ -21,11 +20,8 @@ public class Program {
 		
 		double min = 100.0; // valor para ser parametrizado na função lâmbida, vantagem que pode ser definida pelo usuário 
 		
-		// Expressão lâmbida recebendo como predicado uma função anônima
-		Predicate<Product> pred = p -> p.getPrice() >= min;
-		
-		// Lista recebendo como referência a variável pred
-		list.removeIf(pred);
+		// Lista recebendo como argumento uma função lâmbida anônima
+		list.removeIf(p -> p.getPrice() >= min);
 		
 		for(Product p : list) {
 			System.out.println(p);
