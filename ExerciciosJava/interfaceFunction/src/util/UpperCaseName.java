@@ -11,5 +11,4 @@ public class UpperCaseName implements Function<Product, String> {
 	public String apply(Product p) {
 		return p.getName().toUpperCase();
 	}
-
 }
