@@ -32,8 +32,8 @@ public class Product {
 		this.price = price;
 	}
 	
-	// Método static
-	public static String staticUpperCaseName(Product p) {
-		return p.getName().toUpperCase();
+	// Método que retorna nome em caixa alta
+	public String nonStaticUpperCaseName() {
+		return name.toUpperCase();
 	}
 }
