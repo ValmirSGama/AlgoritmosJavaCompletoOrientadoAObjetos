@@ -21,7 +21,7 @@ public class Program {
 		list.add(new Product("HD Case", 80.90));
 		
 		// convertendo cada elemento da lista original para letras maiúsculas e depois coletando os resultados em uma nova lista
-		List<String> names = list.stream().map(new UpperCaseName()).collect(Collectors.toList());
+		List<String> names = list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
 		
 		names.forEach(System.out::println);
 	}
